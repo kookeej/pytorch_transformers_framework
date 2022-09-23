@@ -141,7 +141,7 @@ def train_regressor(train_dataloader, valid_dataloader, args):
             valid_total_loss.append(sum(valid_epoch_loss)/len(valid_epoch_loss))
             valid_total_acc.append(sum(valid_epoch_acc)/len(valid_epoch_loss))
             logger.info("{0:^23}|{1:^7}|{2:^20.6f}|{3:^20.6f}|{4:^20.6f}".format(datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                                                                epoch,
+                                                                                epoch+1,
                                                                                 sum(train_epoch_loss)/len(train_epoch_loss),
                                                                                 sum(valid_epoch_loss)/len(valid_epoch_loss),
                                                                                 best_val_loss))
@@ -267,7 +267,7 @@ def train_classifier(train_dataloader, valid_dataloader, args):
             valid_total_loss.append(sum(valid_epoch_loss)/len(valid_epoch_loss))
             valid_total_acc.append(sum(valid_epoch_acc)/len(valid_epoch_loss))
             logger.info("{0:^23}|{1:^7}|{2:^20.6f}|{3:^20.6f}|{4:^20.6f}|{5:^20.6f}".format(datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                                                                epoch,
+                                                                                epoch+1,
                                                                                 sum(train_epoch_loss)/len(train_epoch_loss),
                                                                                 sum(train_epoch_acc)/len(train_epoch_acc),
                                                                                 sum(valid_epoch_loss)/len(valid_epoch_loss),
