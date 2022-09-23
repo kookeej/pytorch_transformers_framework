@@ -2,7 +2,7 @@ Framework for pytorch transformers
 ===
 
 
-## Usage
+## 1. Usage
 ### Git clone
 ```
 git clone https://github.com/kookeej/pytorch_transformers_framework.git
@@ -30,4 +30,4 @@ python inference.py
 
 ***
 
-## Framework Design
+## 2. Framework Design
